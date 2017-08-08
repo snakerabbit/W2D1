@@ -13,11 +13,11 @@ class Board
     while row < 8
       if row >= 2 && row <= 5
         8.times do |i|
-          @grid[row][i] = NullPiece.new
+          @grid[row][i] = NullPiece.instance
         end
       else
         8.times do |i|
-          @grid[row] << Piece.new
+          @grid[row] << Piece.new()
         end
       end
       row += 1
